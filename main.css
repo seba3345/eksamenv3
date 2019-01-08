@@ -1,0 +1,1450 @@
+@font-face {
+    font-family: BrainFlower;
+    src: url(fonts/brain_flower_euro-webfont.woff);
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arimo', sans-serif;
+}
+
+.sectionwrapper {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.logo {
+    margin: 1.3vw;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100px;
+    top: .3rem
+}
+
+.logo a {
+    color: black;
+}
+
+.header {
+    font-size: 2rem
+}
+
+
+.fade {
+    opacity: 0;
+    transition: 0.2s
+}
+
+.links.hide {
+    display: none;
+}
+
+h1 {
+    margin: 1rem;
+}
+
+#about h1 {
+    margin: 0rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+.backtotop {
+    width: 70px;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.63);
+    position: fixed;
+    top: 45vw;
+    left: 95.5vw;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 3rem;
+    transform: rotate(270deg);
+    text-align: center;
+
+}
+
+video {
+    margin-top: 1.3rem;
+    width: 100%
+}
+
+/*----------------------------------- BrugerMenu -----------------------*/
+
+.burger {
+    float: right;
+    position: fixed;
+    left: 87vw;
+    top: 0.9vw;
+    margin-right: 2vw;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #000;
+    margin: 6px 0;
+    transition: 0.4s;
+    display: block;
+    border-radius: 20px;
+
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.links {
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+}
+
+.menu {
+    width: 100vw;
+    height: 0vw;
+    display: flex;
+    position: fixed;
+    background: #000;
+    transition: 0.5s;
+    flex-direction: column;
+    text-align: center;
+    align-content: space-around;
+    z-index: 100;
+}
+
+.menu.open {
+    width: 100vw;
+    height: 20rem;
+    background: #000;
+    transition: 0.5s;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu div {
+    margin: 2vw;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.menulink {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menulink::after {
+    content: '';
+    display: block;
+    margin-top: 5px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.menulink:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+/*-------------------------------------- Standard Menu -----------------------------*/
+
+.menu2 {
+    display: flex;
+    flex-direction: row;
+    margin: 2vw 0vw 0vw 2vw;
+    float: right;
+    position: absolute;
+    left: 82vw;
+    top: -2vw;
+
+}
+
+.menu2 a {
+    color: black;
+    font-weight: 500;
+}
+
+.menu2 div {
+    padding: 1vw;
+    margin: 1vw;
+}
+
+
+.menu2link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu2link::after {
+    content: '';
+    display: block;
+    margin-top: 5px;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+    background: #000;
+}
+
+.menu2link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+
+/*-------------------------------------- forside -----------------------------*/
+
+
+.welcome {
+    width: 100%;
+    height: 60rem;
+}
+
+
+h1 {
+    font-size: 6rem;
+}
+
+.headline {
+    text-align: center;
+    padding-top: 15rem;
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    top: 10vw;
+    left: 24vw;
+    z-index: 3;
+}
+
+.flowcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flow {
+    position: relative;
+    width: 15.50vw;
+    height: 44vw;
+    flex-basis: 1px;
+    flex-grow: 1;
+    margin: 10px;
+    opacity: .6;
+}
+
+.fronttext {
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    font-family: sans-serif;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /*    border: 3px black solid;*/
+    width: 230px;
+
+
+}
+
+
+
+
+
+/*-------------------------------------- About -----------------------------*/
+
+#about {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: scroll;
+
+}
+
+#about .sectionwrapper {}
+
+#about .column {
+
+    margin: 2rem;
+    padding: 2rem;
+}
+
+#about h3 {
+    margin: 0;
+    padding: 0;
+}
+
+#about h4 {
+    margin: 0;
+}
+
+.boldtext {
+    font-weight: bold;
+}
+
+#about .backtotop {
+    position: absolute;
+    top: 97vw;
+    left: 95vw;
+}
+
+
+/*-------------------------------------- My Works -----------------------------*/
+
+
+#overview {
+    width: 100%;
+    height: 45.96vw;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+}
+
+.project {
+    position: relative;
+    flex-basis: 1px;
+    flex-grow: 1;
+    margin: 10px;
+    width: 15.50vw;
+    height: 44vw;
+
+
+
+
+
+}
+
+.color1 {
+    background: rgba(255, 0, 0, 0.6);
+
+}
+
+.color2 {
+    background: rgba(0, 0, 0, 0.6);
+
+}
+
+.color3 {
+    background: rgba(0, 128, 0, 0.6);
+
+}
+
+.color4 {
+    background: rgba(128, 0, 128, 0.6);
+
+}
+
+.color5 {
+    background: rgba(0, 0, 255, 0.6);
+
+
+}
+
+.color6 {
+    background: rgba(255, 165, 0, 0.6);
+
+}
+
+.snippic1 {
+    background-image: url(pics/snippics/style.png);
+}
+
+.snippic2 {
+    background-image: url(pics/snippics/pilot.png);
+}
+
+.snippic3 {
+    background-image: url(pics/snippics/petit.png);
+}
+
+.snippic4 {
+    background-image: url(pics/snippics/bbfb.png);
+}
+
+.snippic5 {
+    background-image: url(pics/snippics/sexogsamfund.png);
+}
+
+.snippic6 {
+    background-image: url(pics/snippics/app.png);
+}
+
+.snipoverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+
+}
+
+.sniptext {
+    font-size: 7vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /*    border: 3px black solid;*/
+    padding: 20px;
+    width: 230px;
+    z-index: 10;
+    opacity: 1;
+
+
+}
+
+
+
+.project:hover .snipoverlay {
+    opacity: .7;
+}
+
+
+/*-------------------------------------- Stilart -----------------------------*/
+#stilartsopgave {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 200px;
+    flex-grow: 2;
+}
+
+.undersectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 200px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.column {
+    flex-basis: 200px;
+    flex-grow: 1;
+    align-content: center;
+}
+
+.big_column {
+    flex-basis: 200px;
+    flex-grow: 1;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.pic {
+    display: block;
+    padding-top: 30px;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+}
+
+.underpic1 {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.underpic2 {
+    display: block;
+    width: 64%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.header {
+    font-size: 4rem;
+    color: rgba(0, 0, 0, 1);
+}
+
+#stilartsopgave .text {
+    color: black;
+    flex-basis: 30px;
+    flex-grow: 1;
+    padding: 1vw;
+}
+
+.picture {
+    flex-basis: 30px;
+    flex-grow: 28;
+}
+
+
+
+
+
+
+/*-------------------------------------- Pilot -----------------------------*/
+
+
+
+
+
+#pilotprojekt {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    z-index: -2;
+
+}
+
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 200px;
+    flex-grow: 2;
+
+}
+
+.undersectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 200px;
+    justify-content: center;
+}
+
+.column {
+    flex-basis: 200px;
+    flex-grow: 1;
+    margin: 10px 10px;
+    align-content: center;
+}
+
+.big_column {
+    flex-basis: 200px;
+    flex-grow: 1;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.pic {
+    display: block;
+    padding-top: 30px;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+}
+
+.underpic1 {
+    display: block;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.underpic2 {
+    display: block;
+    width: 64%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.text {
+    font-size: 1.2rem;
+    color: white;
+    flex-basis: 1px;
+    padding: 1vw;
+    flex-grow: 1;
+}
+
+.picture {
+    flex-basis: 30px;
+    flex-grow: 28;
+
+
+}
+
+
+.sectionsize {
+    width: 100%;
+    height: 50.5vw;
+}
+
+
+#pilotprojekt h1 {
+    font-family: BrainFlower;
+    font-size: 6rem;
+    color: white;
+}
+
+#pilotprojekt h2 {
+    font-family: BrainFlower;
+    font-size: 2.5rem;
+    color: white;
+}
+
+/*-------------------------------------- Redesign -----------------------------*/
+
+
+#redesign h1 {
+    color: white;
+}
+
+#redesign h2 {
+    color: white;
+}
+
+/*-------------------------------------- BBFB -----------------------------*/
+#bbfb {
+    overflow: auto;
+}
+
+
+#bbfb .column {
+    margin: 2rem;
+}
+
+#bbfb .underpic2 {
+    width: 75%;
+}
+
+#bbfb h1 {
+    font-family: 'Creepster', cursive;
+    color: #0c3e0c;
+    ;
+    font-size: 4vw;
+}
+
+
+
+#bbfb h2 {
+    color: white;
+
+}
+
+/*-------------------------------------- Delete It! -----------------------------*/
+
+#delteit {
+    overflow: auto;
+}
+
+#deleteit {
+    color: white;
+}
+
+#deleteit .column {
+    margin: 2rem;
+}
+
+#deleteit .underpic2 {
+    width: 80%;
+}
+
+#deleteit h1 {
+    font-family: 'Special Elite', cursive;
+}
+
+
+
+#ux {
+    overflow: auto;
+}
+
+#ux p {
+    color: black;
+}
+
+/*-------------------------------------- Media Querrys -----------------------------*/
+
+
+@media only screen and (min-width: 1560px) {
+
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1559px) {
+
+    .menu {
+        display: flex;
+    }
+
+    .container {
+        display: inherit;
+    }
+
+    .menu2 {
+        display: none;
+    }
+
+    .fronttext {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+
+    .fronttext {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+
+
+
+
+    .flowcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+        height: 165vw;
+        width: 100%;
+    }
+
+
+
+    .flow {
+        position: relative;
+        width: 98vw;
+        height: 20vw;
+        flex-basis: 20px;
+        margin: 1vw;
+        flex-grow: 1;
+        opacity: .6;
+    }
+
+
+
+    .fronttext {
+        color: white;
+        font-size: 1.2rem;
+        position: absolute;
+        font-family: sans-serif;
+        font-weight: bold;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        /*        border: 3px black solid;*/
+        width: 230px;
+
+
+    }
+
+    #about .backtotop {
+        position: fixed;
+        top: 157vw;
+        left: 80vw;
+    }
+
+    .headline {
+        padding-top: 0;
+    }
+
+
+    #about .column {
+
+        margin: 1rem;
+        padding: 0rem;
+    }
+
+    #overview {
+        width: 100%;
+        height: 165.5vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+    .project {
+        position: relative;
+        flex-basis: 200px;
+        flex-grow: 1;
+        margin: 10px;
+        width: 95vw;
+        height: 22.23vw;
+
+    }
+
+
+
+    .snipoverlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+
+    }
+
+    .sniptext {
+        font-size: 12vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        padding: 20px;
+        width: 230px;
+        z-index: 10;
+        opacity: 1;
+
+
+    }
+
+
+
+    .backtotop {
+        width: 18vw;
+        height: 18vw;
+        background: rgba(0, 0, 0, 0.63);
+        position: fixed;
+        top: 157vw;
+        left: 80vw;
+        border-radius: 100px;
+        cursor: pointer;
+
+    }
+
+    .sectionsize {
+
+        width: 100%;
+        height: 178vw;
+
+    }
+
+    .column {
+        flex-basis: 2000px;
+        flex-grow: 1;
+        margin: 2vw;
+        align-content: center;
+    }
+
+    .big_column {
+        flex-basis: 50px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .pic {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0px;
+
+    }
+
+    .underpic1 {
+        flex-basis: 50px;
+    }
+
+
+
+
+    #stilartsopgave {
+        background: white;
+        overflow: auto;
+    }
+
+    #pilotprojekt {
+        overflow: auto;
+    }
+
+    #redesign {
+        overflow: auto;
+    }
+
+    .undersectionwrapper {
+        display: none;
+    }
+
+    .menu.open {
+        height: 10rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 770px) and (min-width: 750px) {
+
+    #overview {
+        width: 100vw;
+        height: 170.4vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+    .project {
+        width: 97.5vw;
+        height: 18.4vw;
+
+    }
+
+    .sectionsize {
+        width: 100%;
+        height: 134vw;
+
+    }
+
+    .backtotop {
+        width: 9.5vw;
+        height: 9.5vw;
+        background: rgba(0, 0, 0, 0.63);
+        position: fixed;
+        top: 120vw;
+        left: 88vw;
+        border-radius: 100px;
+        cursor: pointer;
+
+    }
+
+    .flowcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100vw;
+        height: 125.5vw;
+    }
+
+    .flow {
+        position: relative;
+        width: 97.5vw;
+        flex-basis: 20px;
+        flex-grow: 1;
+        opacity: .6
+    }
+
+    .fronttext {
+        font-size: 3rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 1501px) and (min-width: 1001px) {
+
+    #overview {
+        width: 100vw;
+        height: 200.4vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+
+    .burger {
+        left: 95vw;
+    }
+
+    .project {
+        width: 15.2vw;
+        height: 56vw;
+
+    }
+
+    .sectionsize {
+        width: 100%;
+        height: 63.5vw;
+
+    }
+
+    .backtotop {
+        width: 5vw;
+        height: 5vw;
+        background: rgba(0, 0, 0, 0.63);
+        position: fixed;
+        top: 56vw;
+        left: 94vw;
+        border-radius: 100px;
+        cursor: pointer;
+
+    }
+
+    .flowcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100vw;
+        height: 200.4vw;
+    }
+
+    .flow {
+        position: relative;
+        width: 15.2vw;
+        height: 66.5vw;
+        flex-basis: 20px;
+        flex-grow: 1;
+        opacity: .6
+    }
+
+    .fronttext {
+        font-size: 3rem;
+    }
+
+
+}
+
+.coloranimation {
+    animation-name: colorchange;
+    animation-duration: 6s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+.coloranimation1 {
+    animation-name: colorchange1;
+    animation-duration: 6s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+.coloranimation2 {
+    animation-name: colorchange2;
+    animation-duration: 6s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+.coloranimation3 {
+    animation-name: colorchange3;
+    animation-duration: 6s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+.coloranimation4 {
+    animation-name: colorchange4;
+    animation-duration: 6s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+.coloranimation5 {
+    animation-name: colorchange5;
+    animation-duration: 6s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+.coloranimation6 {
+    animation-name: colorchange6;
+    animation-duration: 6s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+.textanimation {
+    animation-name: textchange1;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+
+.textanimation2 {
+    animation-name: textchange2;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+
+.textanimation3 {
+    animation-name: textchange3;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+
+.textanimation4 {
+    animation-name: textchange4;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+
+@keyframes colorchange {
+    0% {
+        color: red;
+    }
+
+    20% {
+        color: orange;
+    }
+
+    40% {
+        color: blue;
+    }
+
+    60% {
+        color: purple;
+    }
+
+    80% {
+        color: green;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+@keyframes colorchange1 {
+    0% {
+        background: red;
+    }
+
+    16.6% {
+        background: orange;
+    }
+
+    33.2% {
+        background: blue;
+    }
+
+    49.8% {
+        background: purple;
+    }
+
+    66.4% {
+        background: green;
+    }
+
+    83% {
+        background: black;
+    }
+
+    100% {
+        background: red
+    }
+
+}
+
+@keyframes colorchange2 {
+    0% {
+        background: black;
+    }
+
+    16.6% {
+        background: red;
+    }
+
+    33.2% {
+        background: orange;
+    }
+
+    49.8% {
+        background: blue;
+    }
+
+    66.4% {
+        background: purple;
+    }
+
+    83% {
+        background: green;
+    }
+
+    100% {
+        background: black;
+    }
+
+}
+
+@keyframes colorchange3 {
+    0% {
+        background: green;
+    }
+
+    16.6% {
+        background: black;
+    }
+
+    33.2% {
+        background: red;
+    }
+
+    49.8% {
+        background: orange;
+    }
+
+    66.4% {
+        background: blue;
+    }
+
+    83% {
+        background: purple;
+    }
+
+    100% {
+        background: green;
+    }
+
+}
+
+@keyframes colorchange4 {
+    0% {
+        background: purple;
+    }
+
+    16.6% {
+        background: green;
+    }
+
+    33.2% {
+        background: black;
+    }
+
+    49.8% {
+        background: red;
+    }
+
+    66.4% {
+        background: orange;
+    }
+
+    83% {
+        background: blue;
+    }
+
+    100% {
+        background: purple;
+    }
+
+}
+
+@keyframes colorchange5 {
+    0% {
+        background: blue;
+    }
+
+    16.6% {
+        background: purple;
+    }
+
+    33.2% {
+        background: green;
+    }
+
+    49.8% {
+        background: black;
+    }
+
+    66.4% {
+        background: red;
+    }
+
+    83% {
+        background: orange;
+    }
+
+    100% {
+        background: blue;
+    }
+
+}
+
+@keyframes colorchange6 {
+    0% {
+        background: orange;
+    }
+
+    16.6% {
+        background: blue;
+    }
+
+    33.2% {
+        background: purple;
+    }
+
+    49.8% {
+        background: green;
+    }
+
+    66.4% {
+        background: black;
+    }
+
+    83% {
+        background: red;
+    }
+
+    100% {
+        background: orange;
+    }
+
+}
+
+/*
+@keyframes textchange1 {
+
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: black;
+
+    }
+
+    50% {
+        color: black;
+    }
+
+    75% {
+        color: black;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+@keyframes textchange2 {
+
+    0% {
+        color: black;
+    }
+
+    25% {
+        color: red;
+
+    }
+
+    50% {
+        color: black;
+    }
+
+    75% {
+        color: black;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+@keyframes textchange3 {
+
+    0% {
+        color: black;
+    }
+
+    25% {
+        color: black;
+
+    }
+
+    50% {
+        color: red;
+    }
+
+    75% {
+        color: black;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+@keyframes textchange4 {
+
+    0% {
+        color: black;
+    }
+
+    25% {
+        color: black;
+
+    }
+
+    50% {
+        color: black;
+    }
+
+    75% {
+        color: red;
+    }
+
+    100% {
+        color: black;
+    }
+}
+*/
