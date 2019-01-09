@@ -235,6 +235,10 @@ h1 {
     font-size: 6rem;
 }
 
+p {
+    padding: 3rem;
+}
+
 .headline {
     text-align: center;
     padding-top: 15rem;
@@ -314,8 +318,16 @@ h1 {
     font-weight: bold;
 }
 
-#about .backtotop {
+.backtotop_stuck {
     position: absolute;
+    text-align: center;
+    width: 3.7vw;
+    height: 3.7vw;
+    font-size: 3rem;
+    transform: rotate(270deg);
+    background: rgba(0, 0, 0, 0.63);
+    border-radius: 100px;
+    cursor: pointer;
     top: 97vw;
     left: 95vw;
 }
@@ -448,6 +460,10 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+#stilartsopgave h1 {
+    padding: 2rem;
 }
 
 .sectionwrapper {
@@ -633,6 +649,7 @@ h1 {
     font-family: BrainFlower;
     font-size: 6rem;
     color: white;
+    padding: 2rem;
 }
 
 #pilotprojekt h2 {
@@ -641,14 +658,26 @@ h1 {
     color: white;
 }
 
+#pilotprojekt p {
+    color: white;
+}
+
 /*-------------------------------------- Redesign -----------------------------*/
 
 
 #redesign h1 {
     color: white;
+    padding: 2rem;
 }
 
 #redesign h2 {
+    color: white;
+}
+
+
+
+
+#redesign p {
     color: white;
 }
 
@@ -669,6 +698,7 @@ h1 {
 #bbfb h1 {
     font-family: 'Creepster', cursive;
     color: #0c3e0c;
+    font-size: 5rem
 }
 
 
@@ -803,8 +833,8 @@ h1 {
         position: absolute;
         text-align: center;
         width: 18.2vw;
-        height: 17.2vw;
-        top: 279vw;
+        height: 18.2vw;
+        top: 342vw;
         left: 80vw;
         font-size: 3rem;
         transform: rotate(270deg);
@@ -823,6 +853,8 @@ h1 {
         margin: 1rem;
         padding: 0rem;
     }
+
+
 
     #overview {
         width: 100%;
@@ -877,8 +909,8 @@ h1 {
 
 
     .backtotop {
-        width: 15.2vw;
-        height: 15.2vw;
+        width: 18.2vw;
+        height: 18.2vw;
         background: rgba(0, 0, 0, 0.63);
         position: fixed;
         top: 157vw;
