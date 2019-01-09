@@ -698,7 +698,7 @@ p {
 #bbfb h1 {
     font-family: 'Creepster', cursive;
     color: #0c3e0c;
-    font-size: 5rem
+    font-size: 4rem;
 }
 
 
@@ -723,7 +723,7 @@ p {
 }
 
 #deleteit .underpic2 {
-    width: 80%;
+    width: 70%;
 }
 
 #deleteit h1 {
@@ -737,6 +737,10 @@ p {
 }
 
 #ux p {
+    color: black;
+}
+
+#ux a {
     color: black;
 }
 
