@@ -320,6 +320,11 @@ h1 {
     left: 95vw;
 }
 
+.aboutsectionsize {
+    width: 100%;
+    height: 240vw;
+}
+
 
 /*-------------------------------------- My Works -----------------------------*/
 
@@ -664,8 +669,6 @@ h1 {
 #bbfb h1 {
     font-family: 'Creepster', cursive;
     color: #0c3e0c;
-    ;
-    font-size: 4vw;
 }
 
 
@@ -677,7 +680,7 @@ h1 {
 
 /*-------------------------------------- Delete It! -----------------------------*/
 
-#delteit {
+#deleteit {
     overflow: auto;
 }
 
@@ -796,10 +799,18 @@ h1 {
 
     }
 
-    #about .backtotop {
-        position: fixed;
-        top: 157vw;
+    .backtotop_stuck {
+        position: absolute;
+        text-align: center;
+        width: 18.2vw;
+        height: 17.2vw;
+        top: 279vw;
         left: 80vw;
+        font-size: 3rem;
+        transform: rotate(270deg);
+        background: rgba(0, 0, 0, 0.63);
+        border-radius: 100px;
+        cursor: pointer;
     }
 
     .headline {
@@ -866,8 +877,8 @@ h1 {
 
 
     .backtotop {
-        width: 18vw;
-        height: 18vw;
+        width: 15.2vw;
+        height: 15.2vw;
         background: rgba(0, 0, 0, 0.63);
         position: fixed;
         top: 157vw;
@@ -878,10 +889,17 @@ h1 {
     }
 
     .sectionsize {
-
         width: 100%;
         height: 178vw;
 
+    }
+
+    #deleteit h1 {
+        font-size: 3rem;
+    }
+
+    #ux h1 {
+        font-size: 3rem;
     }
 
     .column {
@@ -899,6 +917,10 @@ h1 {
         font-size: 3rem;
     }
 
+    #stilartsopgave p {
+        padding: 5vw;
+    }
+
     .pic {
         margin-left: auto;
         margin-right: auto;
@@ -911,10 +933,11 @@ h1 {
     }
 
 
-
+    p {
+        padding: 5vw;
+    }
 
     #stilartsopgave {
-        background: white;
         overflow: auto;
     }
 

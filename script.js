@@ -1,4 +1,5 @@
 function openFunction(x) {
+    console.log("hej");
     x.classList.toggle("change");
     openMenu();
 }
